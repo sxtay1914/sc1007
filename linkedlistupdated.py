@@ -118,6 +118,8 @@ class LinkedList():
     
     def remove(self, i):
         if i==0:
+            if not self.head:
+                return True
             temp=self.head 
             self.head=self.head.next
             temp.next=None
